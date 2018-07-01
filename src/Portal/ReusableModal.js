@@ -10,6 +10,7 @@ class ReusableModal extends Component {
 					<ModalWrapper>
 						<ModalContent>
 							{this.props.children}
+							<p>This is a modal.</p>
 							<button onClick={this.props.toggle}>Close Modal</button>
 						</ModalContent>
 					</ModalWrapper>
@@ -25,17 +26,21 @@ const ModalWrapper = styled.div`
 	left: 0%;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 `;
 
 const ModalContent = styled.div`
-	background: #ccc;
+	background: #fefefe;
 	padding: 20px;
-	height: 78%;
+	min-height: 50%;
 	width: 82%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 `;
 
 export default ReusableModal;

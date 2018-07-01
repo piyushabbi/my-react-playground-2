@@ -41,8 +41,8 @@ class App extends Component {
 				</Section>
 
 				<Section>
-					<h2>Some Portal</h2>
 					<BasicPortal>
+						<h2>Some Portal</h2>
 						<h3>Hi! I'm in a portal...</h3>
 					</BasicPortal>
 				</Section>
